@@ -1,0 +1,172 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #406343;
+}
+
+.background {
+  background-image: url("/img/background.jpg");
+  width: 1920px;
+  height: 1080px;
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*Header*/
+.header {
+  display: flex;
+  padding-top: 32px;
+  margin-left: 44px;
+  margin-right: 48.07px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  width: 348.93px;
+  
+}
+
+.navigation_list {
+  display: flex;
+  list-style: none;
+  font-size: 25px;
+  justify-content: space-between;
+}
+
+.navigation_link {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.2s ease-in;
+}
+.navigation_link_current {
+  position: relative;
+}
+.navigation_link_current::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  width: 100%;
+  height: 10px;
+  background-color: #406343;
+  border-radius: 2px;
+      
+}
+
+.navigation_link:hover, .navigation_link:focus {
+  color: #406343;
+}
+
+.action_list {
+  display: flex;
+  list-style: none;
+  gap: 0 35px;
+}
+
+.action_button {
+  background-color: transparent;
+  border: none;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+svg {
+  fill: #ffffff;
+}
+
+.action_button svg:hover, .action_button:focus svg {
+  fill: #406343;
+}
+
+
+/*main*/
+
+.text_lion {
+  position: absolute;
+  top: 405px;
+  left: 443px;
+}
+
+.article {
+  position: absolute;
+  left: 1343.75px;
+  top: 674.24px;
+  width: 429px;
+  height: 120px;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+p.article_text {
+  margin-top: 17.79px;
+}
+
+/*main control*/
+
+.control {
+  width: 380px;
+  position: absolute;
+  top: 729px;
+  left: 735px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control_mouse {
+  width: 69px;
+  height: 69px;
+  background-image: url(/img/mouse.svg);
+  background-repeat: no-repeat;
+  background-size: cover;  
+  margin-bottom: 13px;
+}
+
+.video_button {
+  width: 380px;
+  height: 80px;
+  background-color: #406343;
+  border-width: 0;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.button_text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 700;
+  
+}
+
+
+
+
+
